@@ -1,0 +1,23 @@
+name: Name Reporter
+title: Name Reporter
+# Web Exploitation; Forensic; Reverse Engineering; Cryptography; Binary Exploitation
+category: Web Exploitation
+description: |-
+
+  How this web works?
+
+  https://chall1.fitrafep.com
+
+  Format: ASGama{...}
+
+# Do not touch that, dynamic scoring is used.
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 55
+  minimum: 100
+
+flags:
+  - ASGama{t1Ny_P4yl0aD_f012_55t1_1n_pYTh0N}
+

@@ -1,0 +1,21 @@
+name: unexpected
+title: unexpected
+# Web Exploitation; Forensic; Reverse Engineering; Cryptography; Binary Exploitation
+category: Web Exploitation
+description: |-
+
+  link: `chall2.fitrafep.com`
+  source: `wget https://envs.sh/__n.zip -O unexpected.zip`
+  Format: lcat{...}
+
+# Do not touch that, dynamic scoring is used.
+value: 500
+type: dynamic
+extra:
+  initial: 500
+  decay: 55
+  minimum: 100
+
+flags:
+  - lcat{redacted}
+

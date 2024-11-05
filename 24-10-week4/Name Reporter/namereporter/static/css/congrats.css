@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+    header {
+        position: absolute;
+        background-color: black;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 25px 200px;
+        color: #fff;
+        width: 100%;
+        border-bottom: 2px solid black;
+    }
+    header nav ul {
+        display: flex;
+        column-gap: 35px;
+    }
+
+    header nav ul li {
+        list-style: none;
+    }
+    header nav ul li a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        color: #fff;
+        font-weight: 500;
+        position: relative;
+    }
+
+    header nav ul li a::before {
+        content: "";
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        height: 3px;
+        width: 0;
+        transition: 0.3s ease-in-out;
+    }
+
+    header nav ul li a:hover::before {
+        width: 100%;
+    }
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 15px 30px;
+        border-radius: 10px;
+    }
+
+    #message-parent {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #message-parent h1, p {
+        color: black;
+    }
+
+    #message-parent p {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }

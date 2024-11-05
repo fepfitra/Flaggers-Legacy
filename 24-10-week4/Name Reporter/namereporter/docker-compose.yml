@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  namereporter:
+    container_name: namereporter
+    image: namereporter:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "14002:14002"
+    environment:
+      - FLASK_APP=app.py

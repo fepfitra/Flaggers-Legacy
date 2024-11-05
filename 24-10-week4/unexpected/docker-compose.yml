@@ -1,0 +1,28 @@
+# docker-compose.yml
+version: '2'
+
+services:
+  api:
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - "1200:1200"
+    networks:
+      - unexpected
+    volumes:
+      - ./data:/shared
+    #env_file: .env
+
+
+  verifier:
+    build:
+      context: ./verifier
+      dockerfile: Dockerfile
+    networks:
+      - unexpected
+    volumes:
+      - ./data:/shared
+
+networks:
+  unexpected: {}
